@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="19dp"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/IntAdZone1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="30dp"
+            android:text="Int Ad Zone1"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/IntAdZone2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="30dp"
+            android:text="Int Ad Zone2"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/RVAdZone1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="30dp"
+            android:text="RV Ad Zone1"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/RVAdZone2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="30dp"
+            android:text="RV Ad Zone2"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/banner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="30dp"
+            android:text="Refresh Banner"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+    <com.applovin.adview.AppLovinAdView xmlns:demo="http://schemas.applovin.com/android/1.0"
+        android:id="@+id/ad_view"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        demo:loadAdOnCreate="true" />
+
+</android.support.constraint.ConstraintLayout>
